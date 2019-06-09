@@ -1,6 +1,6 @@
-package com.longtao.main.client;
+package com.longtao.client;
 
-import com.longtao.main.server.MyInterface;
+import com.longtao.server.MyInterface;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.ipc.RPC;
 

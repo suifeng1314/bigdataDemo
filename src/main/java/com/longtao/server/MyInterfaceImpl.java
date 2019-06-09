@@ -1,4 +1,4 @@
-package com.longtao.main.server;
+package com.longtao.server;
 
 import org.apache.hadoop.ipc.ProtocolSignature;
 

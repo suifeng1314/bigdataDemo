@@ -1,4 +1,4 @@
-package com.longtao.main;
+package com.longtao.hdfs;
 
 
 import org.apache.hadoop.conf.Configuration;
