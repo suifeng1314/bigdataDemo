@@ -41,7 +41,7 @@ public class FlowCountDriver1 {
 
         //加入自定义分区
         job.setPartitionerClass(PhonenumPartitioner.class);
-        //注意：结果文件几个？
+        // TODO 结果文件几个？ 必须大于等于partition指定的分区数
         job.setNumReduceTasks(5);
 
         //7.设置数据输入的路径 默认TextInputFormat
