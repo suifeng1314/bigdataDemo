@@ -13,5 +13,6 @@
 
     测试文件在com.longtao.file下
     配置Run/Configurations -> Application -> Pragram arguments -> d://in d://out(输入输出路径)
+    logs1和log2注意分区数是否一致
    
     

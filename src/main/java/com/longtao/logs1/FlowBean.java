@@ -1,4 +1,4 @@
-package com.longtao.logs;
+package com.longtao.logs1;
 
 import org.apache.hadoop.io.Writable;
 
@@ -7,9 +7,6 @@ import java.io.DataOutput;
 import java.io.IOException;
 
 /**
- * 封装数据类型需要怎么做？
- * hadoop数据类型实现了序列化接口
- * 如果自定义需要实现这个序列化接口
  */
 public class FlowBean implements Writable {
 

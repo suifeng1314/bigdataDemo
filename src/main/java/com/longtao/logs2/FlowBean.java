@@ -1,18 +1,12 @@
-package com.longtao.logs;
+package com.longtao.logs2;
 
-import org.apache.hadoop.io.Writable;
+import org.apache.hadoop.io.WritableComparable;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-/**
- * 封装数据类型需要怎么做？
- * hadoop数据类型实现了序列化接口
- * 如果自定义需要实现这个序列化接口
- */
-public class FlowBean implements Writable {
-
+public class FlowBean implements WritableComparable<FlowBean> {
     //定义属性：上行流量 下行流量 总流量总和
     private long upFlow;
     private long dfFlow;
@@ -68,5 +62,10 @@ public class FlowBean implements Writable {
     @Override
     public String toString() {
         return upFlow + "\t" + dfFlow + "\t" + flowsum;
+    }
+
+    public int compareTo(FlowBean o) {
+        //倒序
+        return this.flowsum > o.getFlowsum() ? -1:1;
     }
 }

@@ -1,4 +1,4 @@
-package com.longtao.logs;
+package com.longtao.logs1;
 
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
