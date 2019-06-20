@@ -15,7 +15,7 @@ public class FlowCountReducer extends Reducer<Text,FlowBean,Text,FlowBean> {
             upFlow_sum += v.getUpFlow();
             dfFlow_sum += v.getDfFlow();
         }
-
+        // 大数据计算算法:快排  归并 计算快
         FlowBean rsSum = new FlowBean(upFlow_sum, dfFlow_sum);
 
         //输出结果
