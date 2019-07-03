@@ -48,9 +48,9 @@ public class HbaseTest {
 
     public static void main(String[] args) throws IOException {
         System.out.println("main~~~~~~~~");
-//        boolean flag = isExist("student1");
-//        System.out.println("表是否存在：" + flag);
-        createTable("teacher","info1","info2","info3");
+        boolean flag = isExist("student");
+        System.out.println("表是否存在：" + flag);
+//        createTable("teacher","info1","info2","info3");
 
     }
 
