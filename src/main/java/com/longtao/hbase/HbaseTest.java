@@ -116,7 +116,7 @@ public class HbaseTest {
         System.out.println("main~~~~~~~~");
         boolean flag = isExist("student");
         System.out.println("表是否存在：" + flag);
-//        createTable("teacher","info1","info2","info3");
+        createTable("love","info1","info2","info3");
 
     }
 
